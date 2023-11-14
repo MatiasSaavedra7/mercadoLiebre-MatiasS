@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesion!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <a href="/"><img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre"></a>
+            </div>
+    
+            <div class="search-bar">
+                <form action="" method="">
+                    <label for="search"></label>
+                    <input type="search" name="search" id="search" placeholder="Buscar productos, marcas y más...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+    
+            <div class="mensaje-header">
+                <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="login-bar">
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i> </a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i> </a></li>
+                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"> </i></a></li>
+            </ul>
+        </nav>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <form action="/" method="POST" class="formulario-login">
+            <h4>Inicia sesion en tu cuenta: </h4>
+            <div>
+                <input type="text" name="usuario" placeholder="Ingresa tu nombre de usuari@" required>
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Ingresá tu contraseña" required>
+            </div>
+            <input type="submit" value="Enviar" class="submit-button">
+        </form>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <section>
+                <div class="footer-icons">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>
+                    Con MercadoLiebreCash tenés cuotas sin interes con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                    seguro!
+                </p>
+            </section>
+            <section>
+                <div class="footer-icons">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+                <h3>Envio gratis desde los $2500</h3>
+                <p>
+                    Solo por estar registrado en MercadoLiebre tenés envios gratis en miles de productos. Es un beneficio de
+                    Mercado Puntos.
+                </p>
+            </section>
+            <section>
+                <div class="footer-icons">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <h3>Seguridad de principio a fin</h3>
+                <p>
+                    ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer por que estás sempre
+                    protegid@.
+                </p>
+            </section>
+        </div>
+        <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+</body>
+</html>
