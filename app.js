@@ -2,7 +2,7 @@ const { log } = require('console');
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3030;
 
 const publicPathFold = path.resolve(__dirname, './public')
 
@@ -25,5 +25,5 @@ app.get('/login', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Servidor corriendo en el puerto ${port} - http://localhost:${port}/`)
+    console.log(`Servidor iniciado en http://localhost:${port}/`)
 });
