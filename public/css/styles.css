@@ -30,22 +30,19 @@ header {
     margin: auto;
 }
 
-div.search-bar {
+.search-bar {
+    text-align: center;
     width: 50%;
     margin: auto;
 }
 
-div.search-bar, input {
-    text-align: center;
-    width: 50%;
-}
-
 .search-bar input, button {
     font-size: 12px;
-    padding: 12px 8px;
+    padding: 10px;
+    border: none;
     border-radius: 10px;
     background-color: #ebebeb;
-    border: none;
+    max-width: 100px;
 }
 
 .mensaje-header {
@@ -188,6 +185,11 @@ footer .copyright {
     .top-header .search-bar {
         width: 33%;
     }
+    
+    .search-bar input, button {
+        display: inline;
+        max-width: 90%;
+    }
 
     .top-header .mensaje-header {
         width: 33%;
@@ -250,8 +252,9 @@ footer .copyright {
         color: #03264C;
     }
 
-    section article i:hover {
+    section article:hover i {
         transform: rotate(-90deg);
+        transition-duration: 0.5s;
     }
 
     section article:hover .description {
@@ -264,6 +267,10 @@ footer .copyright {
 }
 
 /* ESTILOS A LA PAGINA DE REGISTRO */
+.formulario-registro {
+    /* border: 1px red dashed; */
+    margin: auto;
+}
 form h4 {
     padding: 5px 0px;
 }
@@ -273,18 +280,49 @@ form h4 {
 }
 
 .formulario-registro input {
-    font-size: 16px;
+    font-size: 14px;
+    text-align: left;
     border-radius: 10px;
-    border:solid 1px #ebebeb;
+    border: none;
     padding: 10px;
 }
 
-.formulario-registro .submit-reset-buttons input{
-    border: 1px solid #666;
+/* .formulario-registro .submit-reset-buttons input{
+    border: 1px solid #ebebeb;
+} */
+
+#submit-button {
+    /* border: 1px solid red; */
+    text-align: center;
 }
 
-.submit-reset-buttons {
+#submit-button input {
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+}
+
+#reset-button {
+    /* border: 1px solid red */
+    text-align: center;
+}
+
+#reset-button input {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+}
+
+.formulario-registro #submit-button input:hover {
+    background-color: #0022AA;
+    color: white;
+    border: none;
 }
 
 /* ESTILOS A LA PAGINA DE LOGIN */
@@ -301,10 +339,15 @@ form h4 {
 }
 
 .formulario-login .submit-button {
-    border: 1px solid #666;
-
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
 }
 
 .formulario-login .submit-button:hover {
     background-color: #0022AA;
+    color: white;
 }
