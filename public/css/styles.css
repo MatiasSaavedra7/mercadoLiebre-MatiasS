@@ -1,258 +1,273 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
+	font-family: "Roboto", sans-serif;
+	background-color: #ebebeb;
 }
 
 /* ============================>>>> ESTILOS AL HEADER */
 header {
-    background-color: #EAC926;
-    padding: 5px 15px;
+	background-color: #eac926;
+	padding: 5px 15px;
 }
 
 .nav-bar {
-    display: none;
+	display: none;
 }
 
 .top-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .logo {
-    width: 50%;
-    margin: auto;
+	width: 50%;
+	margin: auto;
 }
 
 .search-bar {
-    text-align: center;
-    width: 50%;
-    margin: auto;
+	text-align: center;
+	width: 50%;
+	margin: auto;
 }
 
-.search-bar input, button {
-    font-size: 12px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: #ebebeb;
-    max-width: 100px;
+.search-bar input,
+button {
+	font-size: 12px;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #ebebeb;
+	max-width: 100px;
 }
 
 .mensaje-header {
-    font-size: 14px;
-    text-align: center;
-    padding: 10px 0px;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px 0px;
 }
 
 .nav-bar ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .nav-bar ul li a {
-    text-decoration: none;
-    color: #000000;
+	text-decoration: none;
+	color: #000000;
 }
 
-.burger-menu{
-    text-align: center;
+.burger-menu {
+	text-align: center;
 }
 
-.burger-menu i{
-    color: #FFF;
-    background-color: #0044AA;
-    font-size: 15px;
-    width: 40px;
-    border-radius: 5px;
-    padding: 10px;
-
+.burger-menu i {
+	color: #fff;
+	background-color: #0044aa;
+	font-size: 15px;
+	width: 40px;
+	border-radius: 5px;
+	padding: 10px;
 }
 
 /* ============================>>>> ESTILOS AL BANNER */
 section.banner img {
-    width: 100%;
+	width: 100%;
 }
 
 /* ============================>>>> ESTILOS AL MAIN */
 main {
-    width: 90%;
-    margin: 20px auto;
+	width: 90%;
+	margin: 20px auto;
 }
 
 main article {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 main article img {
-    width: 100%;
+	width: 100%;
 }
 
 .detail-product {
-    width: 100%;
-    background-color: white;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+	width: 100%;
+	background-color: white;
+	border-top: 1px solid #ebebeb;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
 }
 
 .detail-product i {
-    display: block;
-    color: #39b54a;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
+	display: block;
+	color: #39b54a;
+	font-size: 16px;
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #39b54a;
+	border-radius: 50%;
+	position: absolute;
+	right: 20px;
+	top: -15px;
+	transition: 300ms;
 }
 
 main h3 {
-    font-size: 24px;
-    padding: 10px 0px;
-    color: #666;
+	font-size: 24px;
+	padding: 10px 0px;
+	color: #666;
 }
 
 .price {
-    font-size: 18px;
-    padding: 5px 0px;
-    width: 30%;
+	font-size: 18px;
+	padding: 5px 0px;
+	width: 30%;
 }
 .discount {
-    font-size: 16px;
-    color: #39b54a;
-    padding: 5px 0px;
-    width: 70%;
-    text-align: right;
+	font-size: 16px;
+	color: #39b54a;
+	padding: 5px 0px;
+	width: 70%;
+	text-align: right;
 }
 .description {
-    font-size: 16px;
-    padding: 5px 0px;
-    display: none;
+	font-size: 16px;
+	padding: 5px 0px;
+	display: none;
+}
+
+section article:hover i {
+	transform: rotate(-90deg);
+	transition-duration: 0.5s;
+}
+
+section article:hover .description {
+	display: block;
+}
+
+section article:hover {
+	box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 /* ============================>>>> ESTILOS AL FOOTER */
 footer {
-    background-color: white;
-    padding: 20px 0px;
+	background-color: white;
+	padding: 20px 0px;
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 footer section {
-    text-align: center;
+	text-align: center;
 }
 
 footer .footer-icons {
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
+	color: #1259c3;
+	font-size: 2em;
+	margin-bottom: 10px;
 }
 
 .footer-container p {
-    padding: 10px 0px;
+	padding: 10px 0px;
 }
 
 footer .copyright {
-    font-size: 12px;
-    padding: 10px 0px;
+	font-size: 12px;
+	padding: 10px 0px;
 }
 
 /* ESTILOS PARA NAVEGACION EN TABLETS */
 @media (min-width: 361px) {
-    .top-header {
-        display: flex;
-        flex-wrap: wrap;
-    }
+	.top-header {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-    .top-header .logo {
-        width: 33%;
-    }
+	.top-header .logo {
+		width: 33%;
+	}
 
-    .top-header .search-bar {
-        width: 33%;
-    }
-    
-    .search-bar input, button {
-        display: inline;
-        max-width: 90%;
-    }
+	.top-header .search-bar {
+		width: 33%;
+	}
 
-    .top-header .mensaje-header {
-        width: 33%;
-        margin: auto;
-    }
+	.search-bar input,
+	button {
+		display: inline;
+		max-width: 90%;
+	}
 
-    .nav-bar {
-        display: flex;
-        justify-content: space-between;
-    }
+	.top-header .mensaje-header {
+		width: 33%;
+		margin: auto;
+	}
 
-    .nav-bar ul {
-        display: flex;
-    }
+	.nav-bar {
+		display: flex;
+		justify-content: space-between;
+	}
 
-    .nav-bar a {
-        font-size: 14px;
-        padding: 0px 5px;
-    }
+	.nav-bar ul {
+		display: flex;
+	}
 
-    .burger-menu {
-        display: none;
-    }
+	.nav-bar a {
+		font-size: 14px;
+		padding: 0px 5px;
+	}
 
-    .description {
-        display: none;
-    }
+	.burger-menu {
+		display: none;
+	}
 
-    .products {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+	.description {
+		display: none;
+	}
 
-    main article {
-        width: 40%;
-    }
+	.products {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	main article {
+		width: 40%;
+	}
 }
 
 /* ESTILOS PARA NAVEGACION EN DESKTOP */
 @media (min-width: 769px) {
-    .search-bar input {
-        width: 80%;
-    }
+	.search-bar input {
+		width: 80%;
+	}
 
-    main article {
-        width: 20%;
-    }
+	main article {
+		width: 20%;
+	}
 
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-around;
-    }
+	.footer-container {
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
-    .footer-container section {
-        padding: 0px 20px;
-    }
+	.footer-container section {
+		padding: 0px 20px;
+	}
 
-    .footer-container .footer-icons:hover {
-        color: #03264C;
-    }
-
-    section article:hover i {
+	.footer-container .footer-icons:hover {
+		color: #03264c;
+	}
+	/* ================================================ PRUEBA */
+	/*section article:hover i {
         transform: rotate(-90deg);
         transition-duration: 0.5s;
     }
@@ -263,28 +278,28 @@ footer .copyright {
 
     section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+    }*/
 }
 
 /* ESTILOS A LA PAGINA DE REGISTRO */
 .formulario-registro {
-    /* border: 1px red dashed; */
-    margin: auto;
+	/* border: 1px red dashed; */
+	margin: auto;
 }
 form h4 {
-    padding: 5px 0px;
+	padding: 5px 0px;
 }
 
 .formulario-registro div {
-    padding: 10px 0px;
+	padding: 10px 0px;
 }
 
 .formulario-registro input {
-    font-size: 14px;
-    text-align: left;
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
+	font-size: 14px;
+	text-align: left;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
 }
 
 /* .formulario-registro .submit-reset-buttons input{
@@ -292,62 +307,75 @@ form h4 {
 } */
 
 #submit-button {
-    /* border: 1px solid red; */
-    text-align: center;
+	/* border: 1px solid red; */
+	text-align: center;
 }
 
 #submit-button input {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    background-color: white;
-    border: 1px solid black;
-    width: 100px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background-color: white;
+	border: 1px solid black;
+	width: 100px;
 }
 
 #reset-button {
-    /* border: 1px solid red */
-    text-align: center;
+	/* border: 1px solid red */
+	text-align: center;
 }
 
 #reset-button input {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    background-color: white;
-    border: 1px solid black;
-    width: 100px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background-color: white;
+	border: 1px solid black;
+	width: 100px;
 }
 
 .formulario-registro #submit-button input:hover {
-    background-color: #0022AA;
-    color: white;
-    border: none;
+	background-color: #0022aa;
+	color: white;
+	border: none;
 }
 
 /* ESTILOS A LA PAGINA DE LOGIN */
 .formulario-login div {
-    padding: 10px 0px;
+	padding: 10px 0px;
 }
 
 .formulario-login input {
-    width: 250px;
-    font-size: 16px;
-    border-radius: 10px;
-    border:solid 1px #ebebeb;
-    padding: 10px;
+	width: 250px;
+	font-size: 16px;
+	border-radius: 10px;
+	border: solid 1px #ebebeb;
+	padding: 10px;
 }
 
 .formulario-login .submit-button {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    background-color: white;
-    border: 1px solid black;
-    width: 100px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	background-color: white;
+	border: 1px solid black;
+	width: 100px;
 }
 
 .formulario-login .submit-button:hover {
-    background-color: #0022AA;
-    color: white;
+	background-color: #0022aa;
+	color: white;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:invalid + .error {
+    display: block;
 }
